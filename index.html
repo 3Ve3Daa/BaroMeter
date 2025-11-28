@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="kk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart BaroMeter</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="home">
+      <div class="nav-container">
+        <div class="logo">Smart BaroMeter</div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav-links">
+          <a href="#home">Басты бет</a>
+          <a href="#features">Мүмкіндіктер</a>
+          <a href="#screens">Экрандар</a>
+          <a href="#tech">Техникалық бөлім</a>
+          <a href="#about">Жоба туралы</a>
+          <a href="#download">Жүктеу</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+      </div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Ақылды барометр арқылы ауа райын түсіну оңай</h1>
+          <p>
+            Smart BaroMeter – қысымды өлшейтін, температура мен ылғалдылықты бақылайтын,
+            жасанды интеллект арқылы ауа райын болжайтын мобильді қосымша.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#features">Қосымшаның мүмкіндіктері</a>
+            <a class="btn secondary" href="#about">Жоба туралы</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-circle"></div>
+          <div class="hero-card">
+            <p>Live Pressure</p>
+            <h2>1013 hPa</h2>
+            <span>Стабильді режим</span>
+          </div>
+          <div class="hero-card">
+            <p>AI Forecast</p>
+            <h2>+3°C</h2>
+            <span>Бұлтты, жеңіл жел</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="features" id="features">
+        <div class="section-heading">
+          <h2>Қосымшаның мүмкіндіктері</h2>
+          <p>Әрбір көрсеткіш ғылыми дәлдік пен қарапайым интерфейс арқылы беріледі.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="icon">⏱️</div>
+            <h3>Қысымды өлшеу</h3>
+            <p>Барометр датчиктерінен нақты уақыттағы деректерді аударады.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">🌡️</div>
+            <h3>Температура</h3>
+            <p>Орташа, минималды және максималды мәндерді бақылаңыз.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">💧</div>
+            <h3>Ылғалдылық</h3>
+            <p>Құрғақтық индексі мен жайлылық деңгейін көрсетеді.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">☁️</div>
+            <h3>Ауа райын болжау</h3>
+            <p>AI модельдері қысым қисықтарын талдап, болжам ұсынады.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">📈</div>
+            <h3>Графиктер</h3>
+            <p>Динамикалық диаграммалар өткен деректерді салыстыруға көмектеседі.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">🧭</div>
+            <h3>Интерфейс ерекшеліктері</h3>
+            <p>Түнгі режим, виджет, жеке хабарламалар.</p>
+          </article>
+          <article class="feature-card">
+            <div class="icon">🧠</div>
+            <h3>Жасанды интеллект логикасы</h3>
+            <p>Қосымша деректерге бейімделіп, үлгілерді үздіксіз жаңартады.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="infographic" id="infographic">
+        <div class="section-heading">
+          <h2>Деректер жолы</h2>
+          <p>Сенсордан болжамға дейінгі инфографика Smart BaroMeter ағымын түсіндіреді.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-step">
+            <div class="step-icon">📡</div>
+            <h3>1. Сенсор деректері</h3>
+            <p>Қысым, температура, ылғалдылық мәндері жиналады.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="step-icon">🔄</div>
+            <h3>2. Фильтрация</h3>
+            <p>Деректер тазаланып, калибрленеді.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="step-icon">⚙️</div>
+            <h3>3. AI өңдеу</h3>
+            <p>Нейрожелі трендтер мен аномалияларды табады.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="step-icon">🛰️</div>
+            <h3>4. Сыртқы API</h3>
+            <p>Метеосат деректерімен салыстыру жүзеге асады.</p>
+          </div>
+          <div class="timeline-step">
+            <div class="step-icon">📲</div>
+            <h3>5. Қолданушы интерфейсі</h3>
+            <p>Үйлесімді графиктер мен болжамдар экранға шығады.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="screens" id="screens">
+        <div class="section-heading">
+          <h2>Экрандар</h2>
+          <p>Smart BaroMeter интерфейсі қолданушыға қажет ақпаратты бірден көрсетеді.</p>
+        </div>
+        <div class="screen-grid">
+          <article class="screen-card">
+            <div class="screen-image">
+              <img src="assets/screens/Рисунок2.png" alt="Smart BaroMeter Home Page" />
+            </div>
+            <h3>Home Page</h3>
+            <p>Сенсор деректерінің қысқаша көрінісі және жедел болжам.</p>
+          </article>
+          <article class="screen-card">
+            <div class="screen-image">
+              <img src="assets/screens/Рисунок4.png" alt="Smart BaroMeter Chart Page" />
+            </div>
+            <h3>Chart Page</h3>
+            <p>Қысым мен ауа райының өзгерісін диаграмма арқылы саралау.</p>
+          </article>
+          <article class="screen-card">
+            <div class="screen-image">
+              <img src="assets/screens/Рисунок5.png" alt="Smart BaroMeter About Page" />
+            </div>
+            <h3>About Page</h3>
+            <p>Команда, мақсаттар және барометр технологиясының түсіндірмесі.</p>
+          </article>
+          <article class="screen-card">
+            <div class="screen-image">
+              <img src="assets/screens/Рисунок6.png" alt="Smart BaroMeter Glossary Page" />
+            </div>
+            <h3>Glossary Page</h3>
+            <p>Метеорологиялық терминдерге арналған интерактив сөздік.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="tech" id="tech">
+        <div class="section-heading">
+          <h2>Техникалық бөлім</h2>
+          <p>Жүйенің архитектурасы мен негізгі технологиялық шешімдері.</p>
+        </div>
+        <div class="tech-grid">
+          <article>
+            <h3>Flutter</h3>
+            <p>Кроссплатформалық UI фреймворкі, Android және iOS үшін бір код базасы.</p>
+          </article>
+          <article>
+            <h3>Dart</h3>
+            <p>Асинхронды есептеулерге бейімделген тіл, логика мен UI-ды біріктіреді.</p>
+          </article>
+          <article>
+            <h3>Файлдар құрылымы</h3>
+            <ul>
+              <li><strong>lib/</strong> — негізгі экрандар, виджеттер</li>
+              <li><strong>core/</strong> — сервис, модель, утилиталар</li>
+              <li><strong>assets/</strong> — иконкалар, графика, локализация</li>
+              <li><strong>test/</strong> — модульдік және интеграциялық сынақтар</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Барометр сервис логикасы</h3>
+            <p>SensorManager арқылы қысым деректерін оқиды, Kalman сүзгісімен тегістейді, AI сервиске тасымалдайды.</p>
+          </article>
+          <article>
+            <h3>Қосымшаның жұмыс кезеңдері</h3>
+            <ol>
+              <li>Сенсордан телеметрия алу</li>
+              <li>Деректерді тазалау және нормалау</li>
+              <li>Нейрожелілік модельге беру</li>
+              <li>Болжамды визуалдау</li>
+              <li>Пайдаланушыға хабарлама жіберу</li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="section-heading">
+          <h2>Жоба туралы</h2>
+          <p>Smart BaroMeter жобасының ғылыми негіздері мен қолдану саласы.</p>
+        </div>
+        <div class="about-grid">
+          <article>
+            <h3>Мақсаты</h3>
+            <p>Күнделікті ауа райы көрсеткіштерін ғылыми тілде түсінікті ету.</p>
+          </article>
+          <article>
+            <h3>Міндеттері</h3>
+            <ul>
+              <li>Қысым мониторингі арқылы денсаулыққа әсерді болжау</li>
+              <li>Қолданушыға ыңғайлы диаграммалар ұсыну</li>
+              <li>AI көмегімен болжам сапасын арттыру</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Өзектілігі</h3>
+            <p>Климаттық өзгерістер мен ауа райы құбылыстары көбейген кезде нақты дерек қажет.</p>
+          </article>
+          <article>
+            <h3>Қолдану саласы</h3>
+            <p>Метеорология, денсаулық сақтау, туризм, білім беру салаларында қолданылады.</p>
+          </article>
+          <article>
+            <h3>Дамыту болашағы</h3>
+            <p>IoT құрылғыларымен интеграция, жеке ұсыныстар, қауымдастық платформасы.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="download" id="download">
+        <div class="download-card">
+          <div>
+            <h2>Smart BaroMeter APK</h2>
+            <p>Қосымшаны тестілік режимде жүктеп, функционалын тексеріңіз.</p>
+          </div>
+          <a class="btn primary" href="downloads/app-release.apk">Жүктеу / Скачать APK</a>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="section-heading">
+          <h2>Жиі қойылатын сұрақтар</h2>
+          <p>Қолданушылардан түскен маңызды сұрақтарға жауап.</p>
+        </div>
+        <div class="faq-list">
+          <article class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Деректер қаншалықты дәл?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Қысым мен температура деректері сенсордан тікелей қабылданады, ал ылғалдылық метеоқызмет API-мен салыстырылады.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Қосымша офлайн жұмыс істей ме?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Негізгі өлшеулер офлайн орындалады, бірақ AI болжамдары үшін интернет байланысы қажет.</p>
+            </div>
+          </article>
+          <article class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Қосымша қай тілдерде қолжетімді?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Интерфейс қазақ, орыс және ағылшын тілдеріне локализацияланған.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 Smart BaroMeter. Барлық құқықтар қорғалған.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
