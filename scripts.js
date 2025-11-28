@@ -2,6 +2,7 @@ const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector(".nav-links");
 const navItems = document.querySelectorAll(".nav-links a");
 const faqItems = document.querySelectorAll(".faq-item");
+const toTopButton = document.querySelector(".to-top");
 
 if (navToggle) {
   navToggle.addEventListener("click", () => {
@@ -29,3 +30,14 @@ faqItems.forEach((item) => {
     }
   });
 });
+
+if (toTopButton) {
+  window.addEventListener("scroll", () => {
+    const shouldShow = window.scrollY > 480;
+    toTopButton.classList.toggle("visible", shouldShow);
+  });
+
+  toTopButton.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
