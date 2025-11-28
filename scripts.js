@@ -1,5 +1,6 @@
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelector(".nav-links");
+const navItems = document.querySelectorAll(".nav-links a");
 const faqItems = document.querySelectorAll(".faq-item");
 
 if (navToggle) {
@@ -8,6 +9,15 @@ if (navToggle) {
     navToggle.classList.toggle("active");
   });
 }
+
+navItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    if (navLinks?.classList.contains("open")) {
+      navLinks.classList.remove("open");
+      navToggle?.classList.remove("active");
+    }
+  });
+});
 
 faqItems.forEach((item) => {
   const question = item.querySelector(".faq-question");
